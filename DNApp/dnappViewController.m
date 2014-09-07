@@ -14,6 +14,8 @@
 - (IBAction)loginButtonDidPress:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
+@property (weak, nonatomic) IBOutlet UIImageView *emailImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *passwordImageView;
 
 @end
 
@@ -37,9 +39,28 @@
     return UIStatusBarStyleLightContent;
 }
 
-- (void) textFieldDidBeginEditing:(UITextField *)textField {
-    // Do something if textfield is focused
-    NSLog(@"I`am fired! :(");
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    // Highight email formfield and icon
+    if ([textField isEqual:self.emailTextField]) {
+        [self.emailTextField setBackground:[UIImage imageNamed:@"input-outline-active"]];
+        self.emailImageView.image = [UIImage imageNamed:@"icon-mail-active"];
+      }
+    else {
+        [self.emailTextField setBackground:[UIImage imageNamed:@"input-outline"]];
+        self.emailImageView.image = [UIImage imageNamed:@"icon-mail"];
+        // Email
+    }
+    
+    // Highight password formfield and icon
+        if ([textField isEqual:self.passwordTextField]) {
+        [self.passwordTextField setBackground:[UIImage imageNamed:@"input-outline-active"]];
+            self.passwordImageView.image = [UIImage imageNamed:@"icon-password-active"];
+    }
+        else {
+            [self.passwordTextField setBackground:[UIImage imageNamed:@"input-outline"]];
+            self.passwordImageView.image = [UIImage imageNamed:@"icon-password"];
+            // Email
+        }
 }
 
 - (IBAction)loginButtonDidPress:(id)sender {
@@ -61,8 +82,11 @@
     // animateWithDuration with Damping
     [UIView animateWithDuration:0.7 delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:0 options:0 animations:^{
         
-        //Change the size of the dialogView
-        [self.dialogView setFrame:CGRectMake(self.dialogView.frame.origin.x, self.dialogView.frame.origin.y, self.dialogView.frame.size.width, 320)];
+        // Change the size of the dialogView
+        // Make sure it running once
+        if(self.dialogView.frame.origin.y == 147) {
+        [self.dialogView setFrame:CGRectMake(self.dialogView.frame.origin.x, self.dialogView.frame.origin.y-40, self.dialogView.frame.size.width, 320)];
+        }
     } completion:^(BOOL finished) {
     }];
 }

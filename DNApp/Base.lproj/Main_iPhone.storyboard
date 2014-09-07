@@ -24,14 +24,6 @@
                                         <rect key="frame" x="20" y="147" width="280" height="280"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="icon-mail" translatesAutoresizingMaskIntoConstraints="NO" id="HEZ-Ai-Slb">
-                                                <rect key="frame" x="25" y="106" width="26" height="18"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                            </imageView>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="icon-password" translatesAutoresizingMaskIntoConstraints="NO" id="h2z-UP-wdB">
-                                                <rect key="frame" x="25" y="157" width="25" height="25"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                            </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KjR-sx-hmA">
                                                 <rect key="frame" x="15" y="214" width="250" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -54,6 +46,14 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="icon-mail" translatesAutoresizingMaskIntoConstraints="NO" id="HEZ-Ai-Slb">
+                                                <rect key="frame" x="25" y="106" width="26" height="18"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </imageView>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="icon-password" translatesAutoresizingMaskIntoConstraints="NO" id="h2z-UP-wdB">
+                                                <rect key="frame" x="25" y="157" width="25" height="25"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </imageView>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bTg-Tk-Wge" customClass="CSAnimationView">
                                                 <rect key="frame" x="54" y="4" width="173" height="86"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -115,7 +115,9 @@
                     <connections>
                         <outlet property="DialogView" destination="xX7-w9-nGy" id="9q2-wU-zJa"/>
                         <outlet property="LoginButton" destination="KjR-sx-hmA" id="yVB-cs-mZx"/>
+                        <outlet property="emailImageView" destination="HEZ-Ai-Slb" id="zdU-8u-vgd"/>
                         <outlet property="emailTextField" destination="LaY-L2-dJ3" id="vRo-eM-xSS"/>
+                        <outlet property="passwordImageView" destination="h2z-UP-wdB" id="8py-gr-uD5"/>
                         <outlet property="passwordTextField" destination="ozq-Z7-RLX" id="ybp-fP-bV8"/>
                     </connections>
                 </viewController>
