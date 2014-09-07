@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "53449D4F19BB97A700C3BBF3"
+               BlueprintIdentifier = "965D7FE41908E15100609C8F"
                BuildableName = "DNApp.app"
                BlueprintName = "DNApp"
                ReferencedContainer = "container:DNApp.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "53449D7319BB97A700C3BBF3"
+               BlueprintIdentifier = "965D80081908E15100609C8F"
                BuildableName = "DNAppTests.xctest"
                BlueprintName = "DNAppTests"
                ReferencedContainer = "container:DNApp.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "53449D4F19BB97A700C3BBF3"
+            BlueprintIdentifier = "965D7FE41908E15100609C8F"
             BuildableName = "DNApp.app"
             BlueprintName = "DNApp"
             ReferencedContainer = "container:DNApp.xcodeproj">
@@ -61,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "53449D4F19BB97A700C3BBF3"
+            BlueprintIdentifier = "965D7FE41908E15100609C8F"
             BuildableName = "DNApp.app"
             BlueprintName = "DNApp"
             ReferencedContainer = "container:DNApp.xcodeproj">
@@ -79,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "53449D4F19BB97A700C3BBF3"
+            BlueprintIdentifier = "965D7FE41908E15100609C8F"
             BuildableName = "DNApp.app"
             BlueprintName = "DNApp"
             ReferencedContainer = "container:DNApp.xcodeproj">
