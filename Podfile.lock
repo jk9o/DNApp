@@ -1,13 +1,10 @@
 PODS:
-  - JSONKit (1.5pre)
-  - Reachability (3.1.1)
+  - Canvas (0.1.2)
 
 DEPENDENCIES:
-  - JSONKit (~> 1.4)
-  - Reachability (~> 3.0)
+  - Canvas
 
 SPEC CHECKSUMS:
-  JSONKit: efef3bbd3372ff33f96b9c6f34cf4fe18e74ab69
-  Reachability: 8e9635e3cb4f98e7f825e51147f677ecc694d0e7
+  Canvas: ae2faca05a15c4d6659fb3ae5e2a14817df4449a
 
 COCOAPODS: 0.33.1

@@ -10,20 +10,42 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
-		<key>1A0F81A90F184B368678E33D</key>
+		<key>0A0E93A757BF4AF1A116270D</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>fileRef</key>
+			<string>E053DAA97A0148F0BC14A81E</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>436B0EBDA4064DCCA2072571</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
 			<key>name</key>
-			<string>Pods.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
 		</dict>
 		<key>53449D4719BB97A700C3BBF3</key>
 		<dict>
@@ -33,7 +55,7 @@
 				<string>53449D7B19BB97A700C3BBF3</string>
 				<string>53449D5219BB97A700C3BBF3</string>
 				<string>53449D5119BB97A700C3BBF3</string>
-				<string>1A0F81A90F184B368678E33D</string>
+				<string>DAA1FD0DCA7941F685A676C7</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -133,7 +155,7 @@
 				<string>53449D5619BB97A700C3BBF3</string>
 				<string>53449D5819BB97A700C3BBF3</string>
 				<string>53449D5419BB97A700C3BBF3</string>
-				<string>F2A14CCDE8F14AE59723E316</string>
+				<string>0A0E93A757BF4AF1A116270D</string>
 			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
@@ -162,11 +184,11 @@
 			<string>53449D8519BB97A700C3BBF3</string>
 			<key>buildPhases</key>
 			<array>
-				<string>9FCE18F9AF474AAD80B6DDD1</string>
+				<string>436B0EBDA4064DCCA2072571</string>
 				<string>53449D4C19BB97A700C3BBF3</string>
 				<string>53449D4D19BB97A700C3BBF3</string>
 				<string>53449D4E19BB97A700C3BBF3</string>
-				<string>DA8BA92AB52847E6BB724022</string>
+				<string>E7239860D2DB42F498D17914</string>
 			</array>
 			<key>buildRules</key>
 			<array/>
@@ -218,7 +240,7 @@
 				<string>53449D5519BB97A700C3BBF3</string>
 				<string>53449D5719BB97A700C3BBF3</string>
 				<string>53449D7519BB97A700C3BBF3</string>
-				<string>74DDEA33F99544669F838EF7</string>
+				<string>E053DAA97A0148F0BC14A81E</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -917,7 +939,7 @@
 		<key>53449D8619BB97A700C3BBF3</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>1A0F81A90F184B368678E33D</string>
+			<string>DAA1FD0DCA7941F685A676C7</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
@@ -949,7 +971,7 @@
 		<key>53449D8719BB97A700C3BBF3</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>1A0F81A90F184B368678E33D</string>
+			<string>DAA1FD0DCA7941F685A676C7</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
@@ -1055,7 +1077,22 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>74DDEA33F99544669F838EF7</key>
+		<key>DAA1FD0DCA7941F685A676C7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E053DAA97A0148F0BC14A81E</key>
 		<dict>
 			<key>explicitFileType</key>
 			<string>archive.ar</string>
@@ -1068,37 +1105,7 @@
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>9FCE18F9AF474AAD80B6DDD1</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>DA8BA92AB52847E6BB724022</key>
+		<key>E7239860D2DB42F498D17914</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
@@ -1121,13 +1128,6 @@ fi
 </string>
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
-		</dict>
-		<key>F2A14CCDE8F14AE59723E316</key>
-		<dict>
-			<key>fileRef</key>
-			<string>74DDEA33F99544669F838EF7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
 		</dict>
 	</dict>
 	<key>rootObject</key>
